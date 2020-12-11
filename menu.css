@@ -1,0 +1,275 @@
+html {
+  background-color: rgb(105, 97, 112);
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.three {
+  grid-row: 1;
+  grid-column: 3;
+  border: 10px solid #2d2d2d;
+  background-image: url(feedback.png);
+  background-size: 220px 200px;
+  border-radius: 15px;
+  transform-style: preserve-3d;
+  text-align: center;
+  font-family: 'Salsa', cursive;
+  font-weight: bold;
+
+}
+
+.two {
+  grid-row: 1;
+  grid-column: 2;
+  border: 10px solid #2d2d2d;
+  background-image: url(leaderboard.jpg);
+  background-size: 220px 200px;
+  border-radius: 15px;
+  transform-style: preserve-3d;
+  text-align: center;
+  font-family: 'Salsa', cursive;
+  font-weight: bold;
+
+}
+.one {
+  grid-row: 1;
+  grid-column: 1;
+  border: 10px solid #2d2d2d;
+  background-image: url(start.jpg);
+  background-size: 220px 200px;
+  border-radius: 15px;
+  transform-style: preserve-3d;
+  text-align: center;
+  font-family: 'Salsa', cursive;
+  font-weight: bold;
+
+}
+.one:hover, .two:hover, .three:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+
+} 
+.heading{
+    text-align: center;
+    
+    font-family: 'Salsa', cursive;
+}
+
+.item-center {
+  display: grid;
+  
+  gap: 160px;
+  grid-template-rows: 220px;
+  grid-template-columns: 240px 240px 240px;
+  
+  
+  
+  
+  padding: 130px 150px;
+}
+.logout {
+  float: right;
+  font-family: 'Salsa', cursive;
+  padding-right: 20px;
+
+}
+
+.logout p:hover {
+    cursor: pointer;
+    color: red;
+    font-size: 15px;
+  }
+  @media screen and (max-width:400px) {
+    .item-center{
+      display: grid;
+      height: 100%;
+      grid-template-rows: 115px 115px 115px;
+      grid-template-columns: 130px;
+      
+      gap: 45px;
+      padding: 30px 100px;
+
+    }
+    .three {
+  grid-row: 3;
+  grid-column: 1;
+  background-size: 110px 105px;
+}
+
+.two {
+  grid-row: 2;
+  grid-column: 1;
+  background-size: 110px 105px;
+}
+
+.logout {
+  float: none;
+  text-align: center;
+  padding-right: 0px;
+}
+
+.one {
+  grid-row: 1;
+  grid-column: 1;
+  
+  background-size: 110px 105px;
+
+}
+  }
+
+ @media screen and (min-width: 400px) and (max-width: 510px) {
+    .item-center{
+      display: grid;
+      height: 100%;
+      grid-template-rows: 115px 115px 115px;
+      grid-template-columns: 170px;
+      
+      gap: 45px;
+      padding: 30px 140px;
+
+    }
+    .three {
+  grid-row: 3;
+  grid-column: 1;
+  background-size: 150px 105px;
+}
+
+.two {
+  grid-row: 2;
+  grid-column: 1;
+  background-size: 150px 105px;
+}
+
+.logout {
+  float: none;
+  text-align: center;
+  padding-right: 0px;
+}
+
+.one {
+  grid-row: 1;
+  grid-column: 1;
+  
+  background-size: 150px 105px;
+
+}
+  }
+
+
+
+ @media screen and (min-width: 510px) and (max-width: 650px) {
+    .item-center{
+      display: grid;
+      height: 100%;
+      grid-template-rows: 115px 115px 115px;
+      grid-template-columns: 170px;
+      
+      gap: 45px;
+      padding: 30px 200px;
+
+    }
+    .three {
+  grid-row: 3;
+  grid-column: 1;
+  background-size: 150px 105px;
+}
+
+.two {
+  grid-row: 2;
+  grid-column: 1;
+  background-size: 150px 105px;
+}
+
+.logout {
+  float: none;
+  text-align: center;
+  padding-right: 0px;
+}
+
+.one {
+  grid-row: 1;
+  grid-column: 1;
+  
+  background-size: 150px 105px;
+
+}
+  }
+
+ @media screen and (min-device-width: 650px) and (max-device-width: 800px) {
+    .item-center{
+      display: grid;
+      height: 100%;
+      grid-template-rows: 195px 195px 195px;
+       grid-template-columns: 250px;
+      
+      gap: 55px;
+      padding: 30px 240px;
+
+    }
+    .three {
+  grid-row: 3;
+  grid-column: 1;
+  background-size: 230px 185px;
+}
+
+.two {
+  grid-row: 2;
+  grid-column: 1;
+  background-size: 230px 185px;
+}
+
+
+
+.one {
+  grid-row: 1;
+  grid-column: 1;
+  
+  background-size: 230px 185px;
+
+}
+  }
+
+ @media screen and (min-device-width: 800px) and (max-device-width: 1025px) {
+    .item-center{
+      display: grid;
+      height: 100%;
+      grid-template-rows: 260px 260px 260px;
+       grid-template-columns: 320px;
+      
+      gap: 75px;
+      padding: 30px 360px;
+
+    }
+    .three {
+  grid-row: 3;
+  grid-column: 1;
+  background-size: 300px 250px;
+}
+
+.two {
+  grid-row: 2;
+  grid-column: 1;
+  background-size: 300px 250px;
+}
+.logout {
+  float: none;
+  text-align: center;
+  padding-right: 0px;
+}
+
+
+
+.one {
+  grid-row: 1;
+  grid-column: 1;
+  
+  background-size: 300px 250px;
+
+}
+  }
+
+
