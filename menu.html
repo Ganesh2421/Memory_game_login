@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Menu</title>
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+
+	<link rel="stylesheet" href="menu.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&family=Salsa&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="heading">
+        <h1>THE MEMORY GAME!</h1>
+        <p>Click <a href="help.html">here</a> to know about the game</p>
+</div>
+    
+<div class="item-center">
+  <div class="one" id="start" onclick="start_game()">START</div>
+  <div class="two" onclick="start_leaderboard()">LEADERBOARD</div>
+  <div class="three">FEEDBACK</div>
+</div>
+<div class="logout">
+	<p onclick="signout()">Click here to Logout<p>
+</div>
+
+</body>
+<script src="menu.js"></script>
+</html>
